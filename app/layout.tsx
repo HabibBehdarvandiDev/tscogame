@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Vazirmatn } from "next/font/google";
 import "./globals.css";
-import Header from "./components/common/Header";
+import Header from "./components/common/header/Header";
+import ThemeContextProvider, { ThemeContext } from "@/context/ThemeContext";
 
 const vazir = Vazirmatn({ subsets: ["latin"] });
 
@@ -16,10 +17,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa">
+    <html lang="fa" dir="rtl">
       <body className={vazir.className}>
-        <Header />
-        {children}
+        <ThemeContextProvider>
+          <Header />
+          {children}
+        </ThemeContextProvider>
       </body>
     </html>
   );
