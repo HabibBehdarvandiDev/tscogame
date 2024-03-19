@@ -12,6 +12,7 @@ export default function Home() {
           <BiStar className="w-5 h-5 m-2" />
         </span>
       </p>
+
     </main>
   );
 }

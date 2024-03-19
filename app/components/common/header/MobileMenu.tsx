@@ -20,13 +20,13 @@ const MobileMenu = () => {
   return (
     <>
       <button
-        className="rounded-md text-zinc-700 dark:text-white"
+        className="rounded-md text-zinc-700 dark:text-white md:hidden"
         onClick={handleMenuTrigger}
       >
         <FaBarsStaggered className="w-5 h-5 m-2" />
       </button>
       <div
-        className={`absolute  ${
+        className={`absolute md:hidden ${
           open ? "-translate-x-0" : "translate-x-full"
         } top-0 right-0 w-full h-screen bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white transition-transform duration-500 overflow-y-hidden`}
       >

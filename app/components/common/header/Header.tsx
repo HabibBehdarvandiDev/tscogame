@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiShoppingCart } from "react-icons/fi";
 import MobileMenu from "./MobileMenu";
+import DesktopMenu from "./DesktopMenu";
 
 const Header = () => {
   return (
@@ -14,6 +15,8 @@ const Header = () => {
       <Link href={"/"}>
         <Image src={Logo} alt="Logo.png" width={50} height={50} />
       </Link>
+
+      <DesktopMenu />
 
       <Link
         href={"/store"}
