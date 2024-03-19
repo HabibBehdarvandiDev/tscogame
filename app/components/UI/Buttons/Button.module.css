@@ -1,0 +1,115 @@
+.btn {
+  @apply rounded-lg m-2 flex space-x-2 align-middle justify-center items-center;
+}
+
+.btn_sm {
+  @apply rounded-md text-sm px-3 py-1;
+}
+.btn_md {
+  @apply rounded-md text-base px-4 py-2;
+}
+.btn_lg {
+  @apply rounded-md text-base px-6 py-3;
+}
+
+.btn_primary {
+  @apply bg-primary text-white;
+}
+.btn_secondary {
+  @apply bg-secondary text-white;
+}
+.btn_info {
+  @apply bg-info text-white;
+}
+.btn_warning {
+  @apply bg-warning text-white;
+}
+.btn_danger {
+  @apply bg-danger text-white;
+}
+.btn_success {
+  @apply bg-success text-white;
+}
+
+/* Variants */
+
+/* Dashed */
+.btn_primary.btn_dashed {
+  @apply border-2 border-dashed border-primary bg-transparent text-primary;
+}
+.btn_secondary.btn_dashed {
+  @apply border-2 border-dashed border-secondary bg-transparent text-secondary;
+}
+.btn_info.btn_dashed {
+  @apply border-2 border-dashed border-info bg-transparent text-info;
+}
+.btn_danger.btn_dashed {
+  @apply border-2 border-dashed border-danger bg-transparent text-danger;
+}
+.btn_warning.btn_dashed {
+  @apply border-2 border-dashed border-warning bg-transparent text-warning;
+}
+.btn_success.btn_dashed {
+  @apply border-2 border-dashed border-success bg-transparent text-success;
+}
+
+/* Ghost */
+.btn_primary.btn_ghost {
+  @apply bg-primary bg-opacity-40 text-primary-dark;
+}
+.btn_secondary.btn_ghost {
+  @apply bg-secondary bg-opacity-40 text-secondary-dark;
+}
+.btn_info.btn_ghost {
+  @apply bg-info bg-opacity-40 text-info-dark;
+}
+.btn_danger.btn_ghost {
+  @apply bg-danger bg-opacity-40 text-danger-dark;
+}
+.btn_warning.btn_ghost {
+  @apply bg-warning bg-opacity-40 text-warning-dark;
+}
+.btn_success.btn_ghost {
+  @apply bg-success bg-opacity-40 text-success-dark;
+}
+
+/* Outlined */
+.btn_primary.btn_outlined {
+  @apply bg-transparent border-2 border-primary text-primary;
+}
+.btn_secondary.btn_outlined {
+  @apply bg-transparent border-2 border-secondary text-secondary;
+}
+.btn_info.btn_outlined {
+  @apply bg-transparent border-2 border-info text-info;
+}
+.btn_danger.btn_outlined {
+  @apply bg-transparent border-2 border-danger text-danger;
+}
+.btn_warning.btn_outlined {
+  @apply bg-transparent border-2 border-warning text-warning;
+}
+.btn_success.btn_outlined {
+  @apply bg-transparent border-2 border-success text-success;
+}
+
+
+/* link */
+.btn_primary.btn_link {
+  @apply bg-transparent text-primary;
+}
+.btn_secondary.btn_link {
+  @apply bg-transparent text-secondary;
+}
+.btn_info.btn_link {
+  @apply bg-transparent text-info;
+}
+.btn_danger.btn_link {
+  @apply bg-transparent text-danger;
+}
+.btn_warning.btn_link {
+  @apply bg-transparent text-warning;
+}
+.btn_success.btn_link {
+  @apply bg-transparent text-success;
+}
